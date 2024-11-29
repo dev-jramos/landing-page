@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Reset de estilo */
 * {
     margin: 0;
@@ -7,15 +10,15 @@
 
 /* Estilo global */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #F5F5DC; /* Cor de fundo Creme */
+    color: #4A4A4A; /* Cor do texto em cinza mais escuro */
 }
 
 /* Cabeçalho */
 header {
-    background-color: #2e8b57;
+    background-color: #A8D5BA; /* Verde suave */
     color: white;
     padding: 20px;
     display: flex;
@@ -33,17 +36,17 @@ header nav {
 /* Logo e título ao lado */
 .logo {
     display: flex;
-    align-items: center;  /* Alinha a logo e o título verticalmente */
-    gap: 15px;  /* Espaçamento entre logo e título */
+    align-items: center;
+    gap: 15px;
 }
 
 #logo {
-    height: 50px;  /* Ajuste o tamanho da logo */
+    height: 50px;
     width: auto;
 }
 
 h2 {
-    font-size: 24px;  /* Ajuste o tamanho do texto do título */
+    font-size: 24px;
     margin: 0;
 }
 
@@ -65,18 +68,13 @@ header nav ul li a {
     font-weight: bold;
 }
 
-header .logo img {
-    height: 50px;
-}
-
 /* Seção */
 .section {
-    padding: 100px 20px 40px;
-    text-align: center;
-    background-color: #fff;
+    padding: 80px 20px 40px;
+    background-color: #FFFFFF; /* Cor de fundo branca para seções */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 80px;
-    /* Para não sobrepor o cabeçalho */
+    text-align: center;
 }
 
 .container {
@@ -85,19 +83,19 @@ header .logo img {
     padding: 0 15px;
 }
 
-.container p{
+.container p {
     text-align: justify;
 }
 
-.container ul li{
+.container ul li {
     text-align: justify;
 }
 
-
+/* Imagem principal */
 .imagem-principal {
     width: 200px;
     height: 200px;
-    object-fit: cover;  /* Garante que a imagem não distorça e se ajuste bem ao tamanho */
+    object-fit: cover;
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -115,12 +113,13 @@ header .logo img {
 .galeria-item video {
     width: 100%;
     max-width: 300px;
+    object-fit: cover; /* Garante que o vídeo não distorça e preencha o espaço corretamente */
     border-radius: 10px;
 }
 
 /* Sessão de Equilíbrio Energético */
 #equilibrio-energetico {
-    background-color: #e1f7e1;
+    background-color: #D1C6E2; /* Lavanda */
     padding: 40px;
     border-radius: 8px;
     text-align: center;
@@ -128,7 +127,7 @@ header .logo img {
 
 #equilibrio-energetico button {
     padding: 15px 25px;
-    background-color: #2e8b57;
+    background-color: #A8D5BA; /* Verde suave */
     color: white;
     font-size: 18px;
     border: none;
@@ -186,7 +185,7 @@ form textarea {
 
 form button {
     padding: 10px;
-    background-color: #2e8b57;
+    background-color: #A8D5BA; /* Verde suave */
     color: white;
     border: none;
     border-radius: 5px;
@@ -195,7 +194,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #218c45;
+    background-color: #2e8b57; /* Tom mais escuro de verde */
 }
 
 /* Rodapé */
