@@ -1,0 +1,228 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo e título ao lado */
+.logo {
+    display: flex;
+    align-items: center;  /* Alinha a logo e o título verticalmente */
+    gap: 15px;  /* Espaçamento entre logo e título */
+}
+
+#logo {
+    height: 50px;  /* Ajuste o tamanho da logo */
+    width: auto;
+}
+
+h2 {
+    font-size: 24px;  /* Ajuste o tamanho do texto do título */
+    margin: 0;
+}
+
+/* Menu */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+/* Seção */
+.section {
+    padding: 100px 20px 40px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    /* Para não sobrepor o cabeçalho */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container p{
+    text-align: justify;
+}
+
+.container ul li{
+    text-align: justify;
+}
+
+
+.imagem-principal {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;  /* Garante que a imagem não distorça e se ajuste bem ao tamanho */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Galeria */
+.galeria-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.galeria-item img,
+.galeria-item video {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Sessão de Equilíbrio Energético */
+#equilibrio-energetico {
+    background-color: #e1f7e1;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#equilibrio-energetico button {
+    padding: 15px 25px;
+    background-color: #2e8b57;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#equilibrio-energetico button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+#equilibrio-energetico #sessaoStatus {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Depoimentos */
+.depoimentos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.depoimento {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Formulário de Contato */
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background-color: #218c45;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsividade: Ajuste para telas menores */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 60px 20px 40px;
+    }
+
+    .galeria-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

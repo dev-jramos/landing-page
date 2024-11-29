@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapia Holística - Sua Jornada de Bem-Estar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header>
+    <nav>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="logo_sbg.png" alt="Logo Terapia Holística" id="logo">
+            <h2>Meu Espaço Holístico</h2>
+        </div>
+        
+        <!-- Menu -->
+        <ul>
+            <li><a href="#apresentacao">Apresentação</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#equilibrio-energetico">Equilíbrio Energético</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Seção de Apresentação -->
+<section id="apresentacao" class="section">
+    <div class="container">
+        <h2>Bem-vindo ao Meu Espaço de Terapia Holística</h2>
+        <p>A Terapia Holística é uma abordagem integrativa que considera o ser humano como um todo — corpo, mente, emoções e espírito. Ao invés de focar apenas nos sintomas físicos ou nas doenças isoladas, a Terapia Holística busca restaurar o equilíbrio energético e emocional de cada indivíduo, reconhecendo que a saúde é um reflexo do estado de harmonia entre esses diferentes aspectos. Por meio de técnicas terapêuticas que envolvem a meditação, a acupuntura, a aromaterapia, a reiki e outras práticas ancestrais, oferecemos um caminho de cura natural e profunda.</p>
+        <p>
+            Este espaço foi cuidadosamente preparado para acolher você em sua jornada de autoconhecimento e bem-estar. Ao integrar o tratamento das emoções e do espírito com o cuidado físico, a Terapia Holística promove não apenas a cura de doenças, mas também o fortalecimento do equilíbrio interior e da paz mental. Acreditamos que todos têm um poder de cura interno, e a terapia funciona como uma ferramenta para acessar esse potencial. Em um ambiente tranquilo e acolhedor, você poderá explorar as diversas práticas que ajudam a restaurar sua energia vital, aliviar o estresse, reduzir a ansiedade e recuperar o equilíbrio emocional, físico e espiritual.
+        </p>
+        <img src="logo1.png" alt="Imagem Terapia Holística" class="imagem-principal">
+    </div>
+</section>
+
+<!-- Seção de O que é Terapia Holística -->
+<section id="descricao" class="section">
+    <div class="container">
+        <h2>O que é Terapia Holística?</h2>
+        <p>A Terapia Holística considera a pessoa como um todo, tratando não apenas os sintomas físicos, mas também as emoções e o espírito, restaurando o equilíbrio entre corpo, mente e alma.</p>
+        <h3>Benefícios da Terapia Holística:</h3>
+        <ul>
+            <li><strong>Redução do Estresse e Ansiedade</strong>: Técnicas de relaxamento e meditação ajudam a aliviar o estresse e promover a calma.</li>
+            <li><strong>Equilíbrio Emocional</strong>: A terapia trabalha os aspectos emocionais, promovendo autoconhecimento e equilíbrio.</li>
+            <li><strong>Melhora da Saúde Física</strong>: A Terapia Holística pode ajudar na recuperação de doenças e na prevenção de novos problemas.</li>
+            <li><strong>Aumento da Energia e Vitalidade</strong>: A restauração do equilíbrio energético ajuda a aumentar a energia vital.</li>
+            <li><strong>Crescimento Espiritual</strong>: A terapia oferece uma conexão mais profunda consigo mesmo, proporcionando clareza sobre seu propósito de vida.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Seção de Galeria de Fotos e Vídeos -->
+<section id="galeria" class="section">
+    <div class="container">
+        <h2>Galeria de Fotos e Vídeos</h2>
+        <div class="galeria-container">
+            <div class="galeria-item">
+                <img src="tera01.jpg" alt="Foto Terapia 1">
+            </div>
+            <div class="galeria-item">
+                <img src="tera02.jpg" alt="Foto Terapia 2">
+            </div>
+            <div class="galeria-item">
+                <video controls>
+                    <source src="tera_v.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Sessão de Equilíbrio Energético -->
+<section id="equilibrio-energetico" class="section">
+    <div class="container">
+        <h2>Sessão de Equilíbrio Energético</h2>
+        <p>Experimente uma breve meditação guiada para restaurar o seu equilíbrio energético e sentir os benefícios da Terapia Holística em sua vida.</p>
+        <button id="iniciarSessao" onclick="iniciarSessao()">Iniciar Sessão de Equilíbrio</button>
+        <div id="sessaoStatus"></div>
+        <audio id="audioSessao" src="audioSessao.mp3"></audio>
+    </div>
+</section>
+
+<!-- Seção de Depoimentos -->
+<section id="depoimentos" class="section">
+    <div class="container">
+        <h2>Depoimentos de Clientes</h2>
+        <div class="depoimentos-container">
+            <div class="depoimento">
+                <p>"A terapia foi transformadora, me trouxe paz e clareza!"</p>
+                <p>- Cliente A</p>
+            </div>
+            <div class="depoimento">
+                <p>"Incrível! Me senti renovado e cheio de energia positiva!"</p>
+                <p>- Cliente B</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Formulário de Contato -->
+<section id="contato" class="section">
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <form id="formContato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="respostaContato"></p>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2024 Terapia Holística. Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
